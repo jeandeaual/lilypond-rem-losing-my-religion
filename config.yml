@@ -8,13 +8,13 @@
   path: description
 - command: update
   path: baseurl
-  value: /lilypond-bass-rem-losing-my-religion
+  value: /lilypond-rem-losing-my-religion
 - command: update
   path: url
   value: https://jeandeaual.github.io
 - command: update
   path: repository
-  value: jeandeaual/lilypond-bass-rem-losing-my-religion
+  value: jeandeaual/lilypond-rem-losing-my-religion
 - command: update
   path: copyright
   value: true
