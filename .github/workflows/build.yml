@@ -32,7 +32,9 @@ jobs:
       - name: Make the video HTML5 compatible
         uses: docker://jeandeaual/lilypond:devel-ly2video
         with:
-          args: ffmpeg -i build/video/rem-losing-my-religion.avi -c:v libx264 -pix_fmt yuv420p -movflags faststart build/video/rem-losing-my-religion.mp4 && rm build/video/rem-losing-my-religion.avi
+          args: ffmpeg -i build/video/rem-losing-my-religion.avi -c:v libx264 -pix_fmt yuv420p -movflags faststart build/video/rem-losing-my-religion.mp4
+      - name: Remove extra video file
+        run: rm build/video/rem-losing-my-religion.avi
       - name: Remove extra MIDI files
         run: |
           cp build/a4/*.midi build/midi/
